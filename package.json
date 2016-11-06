@@ -1,0 +1,26 @@
+{
+  "name": "magister-tools",
+  "version": "1.0.0",
+  "description": "Makes getting grades and other data from magister easier.",
+  "keywords": [
+    "magister"
+  ],
+  "main": "magister-tools.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skillzzjesse/magister-tools.git"
+  },
+
+  "author": "Jesse van der Pluijm",
+  "license": "MIT",
+  "dependencies": {
+    "magister.js": "1.x",
+  },
+  "bugs": {
+    "url": "https://github.com/skillzzjesse/magister-tools/issues"
+  },
+  "homepage": "https://github.com/skillzzjesse/magister-tools#readme"
+}
