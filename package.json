@@ -13,11 +13,10 @@
     "type": "git",
     "url": "git+https://github.com/skillzzjesse/magister-tools.git"
   },
-
   "author": "Jesse van der Pluijm",
   "license": "MIT",
   "dependencies": {
-    "magister.js": "1.x"
+    "magister.js": "^1.22.0"
   },
   "bugs": {
     "url": "https://github.com/skillzzjesse/magister-tools/issues"
