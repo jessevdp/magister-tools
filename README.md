@@ -6,13 +6,13 @@
 
 ---
 
-## Installation
+# Installation
 Install the npm package
 ```
 npm install magister-tools 
 ```
 
-## Example usage 
+# Example usage 
 ```js
 var magister_tools = require('magister-tools');
 
@@ -61,10 +61,10 @@ magister_tools.magisterLogin({
 
 # Documentation
 <a name="magisterLogin
-This function logs into magister using magisterJS."></a>
+This function logs into magister using MagisterJS."></a>
 
 ## magisterLogin
-This function logs into magister using magisterJS.  
+This function logs into magister using MagisterJS.  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -80,7 +80,7 @@ This function fetches the current course for the logged in user.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| input | <code>?</code> | magisterlogin. (pass in `this` inside of .ready()) |
+| input | <code>?</code> | magisterlogin. (pass in magisterlogin from the callback of the magisterLogin method) |
 | input | <code>function</code> | A callback function taking two parameters. -> err, currentcourse |
  
 <a name="fetchGrades
@@ -91,7 +91,7 @@ This function fetches the grades for the course of the logged in user.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| input | <code>Array</code> | course: A Course (like: 4 VWO E/M 14-15) (You can get the courses from magisterJS) |
+| input | <code>Array</code> | course: A Course (like: 4 VWO E/M 14-15) (You can get the courses from MagisterJS) |
 | input | <code>function</code> | A callback function taking two parameters. -> err, grades |
 
 <a name="getEndGrades
