@@ -69,3 +69,11 @@ magister_tools.magisterLogin({
  * magisterlogin // (pass in `this` inside of .ready() using magisterJS)
 * **doFirst** {Function} *optional* // A function the program needs to excecute before trying to login to Magister.
  * For instance: logging something to the console indicating we're trying to log in.
+
+## fetchCurrentCourse(magisterlogin, callback)
+> This function fetches the current course for the logged in user.
+
+* **magisterlogin** {?} *input* magisterlogin (pass in magisterlogin from the callback of the magisterLogin method)
+* **callback** {Function} *input* // A callback function taking two parameters. -> err, course
+ * err // Any error that happened when fetching current course.
+ * course // A Course (like: 4 VWO E/M 14-15) (You can get the courses from magisterJS)
