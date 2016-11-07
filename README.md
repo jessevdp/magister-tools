@@ -63,7 +63,7 @@ magister_tools.magisterLogin({
 <a name="magisterLogin
 This function logs into magister using MagisterJS."></a>
 
-## magisterLogin
+### magisterLogin
 This function logs into magister using MagisterJS.  
 
 | Param | Type | Description |
@@ -75,7 +75,7 @@ This function logs into magister using MagisterJS.
 <a name="fetchCurrentCourse
 This function fetches the current course for the logged in user."></a>
 
-## fetchCurrentCourse
+### fetchCurrentCourse
 This function fetches the current course for the logged in user.  
 
 | Param | Type | Description |
@@ -86,7 +86,7 @@ This function fetches the current course for the logged in user.
 <a name="fetchGrades
 This function fetches the grades for the course of the logged in user."></a>
 
-## fetchGrades
+### fetchGrades
 This function fetches the grades for the course of the logged in user.    
 
 | Param | Type | Description |
@@ -97,7 +97,7 @@ This function fetches the grades for the course of the logged in user.
 <a name="getEndGrades
 This function selects the endgrades from a list of grades."></a>
 
-## getEndGrades
+### getEndGrades
 This function selects the endgrades from a list of grades. ⇒ <code>Object</code>  
 **Returns**: <code>Object</code> - output An object structured like this:  
 ```js
