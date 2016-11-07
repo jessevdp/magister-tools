@@ -73,7 +73,7 @@ magister_tools.magisterLogin({
 ## fetchCurrentCourse(magisterlogin, callback)
 > This function fetches the current course for the logged in user.
 
-* **magisterlogin** {?} *input* magisterlogin (pass in magisterlogin from the callback of the magisterLogin method)
+* **magisterlogin** {?} *input* // magisterlogin (pass in magisterlogin from the callback of the magisterLogin method)
 * **callback** {Function} *input* // A callback function taking two parameters. -> err, course
  * err // Any error that happened when fetching current course.
  * course // A Course (like: 4 VWO E/M 14-15) (You can get the courses from magisterJS)
