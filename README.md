@@ -7,8 +7,8 @@
 ---
 
 # Installation
-Install the npm package
 #### Using npm:
+Install the npm package
 ```
 npm install magister-tools 
 ```
