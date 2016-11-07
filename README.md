@@ -8,9 +8,20 @@
 
 # Installation
 Install the npm package
+#### Using npm:
 ```
 npm install magister-tools 
 ```
+#### Cloning github source code:
+1. Clone the source code.  
+ ```
+ git clone https://github.com/skillzzjesse/magister-tools.git
+ ```
+2. install the dependencies.  
+ ```
+ npm install
+ ```
+3. Profit??
 
 # Example usage 
 ```js
