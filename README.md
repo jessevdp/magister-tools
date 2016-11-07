@@ -57,4 +57,15 @@ magister_tools.magisterLogin({
    // log something to the console indicating you're trying to login.
 });
 ```
+---
 
+# Documentation
+## **magisterLogin(settings, callback, doFirst)**  
+> This function logs into magister using magisterJS.
+
+* **settings** {Object} *input* // An object containing the data needed to login to magister.
+* **callback** {Function} *input* // A callback function taking two parameters. -> err, magisterlogin
+ * err // Any error that happened when trying to login to magister.
+ * magisterlogin // (pass in `this` inside of .ready() using magisterJS)
+* **doFirst** {Function} *optional* // A function the program needs to excecute before trying to login to Magister.
+ * For instance: logging something to the console indicating we're trying to log in.
