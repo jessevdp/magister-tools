@@ -7,12 +7,12 @@
 ---
 
 # Installation
-#### Using npm:
+## Using npm:
 Install the npm package
 ```
 npm install magister-tools 
 ```
-#### Cloning github source code:
+## Cloning github source code:
 1: Clone the source code.  
 ```
 git clone https://github.com/skillzzjesse/magister-tools.git
@@ -74,7 +74,7 @@ magister_tools.magisterLogin({
 <a name="magisterLogin
 This function logs into magister using MagisterJS."></a>
 
-### magisterLogin
+### magisterLogin(settings, callback, doFirst)
 This function logs into magister using MagisterJS.  
 
 | Param | Type | Description |
@@ -86,7 +86,7 @@ This function logs into magister using MagisterJS.
 <a name="fetchCurrentCourse
 This function fetches the current course for the logged in user."></a>
 
-### fetchCurrentCourse
+### fetchCurrentCourse(magisterlogin, callback)
 This function fetches the current course for the logged in user.  
 
 | Param | Type | Description |
@@ -97,7 +97,7 @@ This function fetches the current course for the logged in user.
 <a name="fetchGrades
 This function fetches the grades for the course of the logged in user."></a>
 
-### fetchGrades
+### fetchGrades(course, callback)
 This function fetches the grades for the course of the logged in user.    
 
 | Param | Type | Description |
@@ -108,7 +108,7 @@ This function fetches the grades for the course of the logged in user.
 <a name="getEndGrades
 This function selects the endgrades from a list of grades."></a>
 
-### getEndGrades
+### getEndGrades(grades)
 This function selects the endgrades from a list of grades. ⇒ <code>Object</code>  
 **Returns**: <code>Object</code> - output An object structured like this:  
 ```js
