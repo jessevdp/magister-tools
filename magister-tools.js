@@ -33,9 +33,15 @@ module.exports = {
     // If we need to do something before trying to log in we do it here.
     if (doFirst) doFirst();
 
+    // try to login to magister using settings as login-data.
+    try {
+      var magisterlogin = new Magister.Magister(settings);
+    } catch (err) {
+      callback(err) //Early return to callback with the error
+    }
 
-    // Login to magister using settings as login-data.
-    new Magister.Magister(settings).ready(function (err) {
+    // Invoke the .ready function.
+    magisterlogin.ready(function (err) {
       // Invoke callback when logged into magister. (if callback exists)
       if (callback) callback(err, this);
     });
