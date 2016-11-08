@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/img/magister-tools.svg" alt="Magister Tools Logo">
+  <img src="assets/img/magister-tools.png" alt="Magister Tools Logo">
   <br/><br/>
 </p>
 <p align="center">
