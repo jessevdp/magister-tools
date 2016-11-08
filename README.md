@@ -17,6 +17,8 @@ I am open to any [suggestions](#suggestions).
 * [Suggestions](#suggestions)  
 * [License & Disclaimer](#license--disclaimer)  
 
+---
+
 # Installation
 ## Using npm:
 Install the npm package
