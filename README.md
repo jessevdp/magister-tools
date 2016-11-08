@@ -124,7 +124,7 @@ This function selects the endgrades from a list of grades."></a>
 <a name="getEndGrades
 This function selects the endgrades from a list of grades."></a>
 
-## getEndGrades(grades)
+### getEndGrades(grades)
 This function selects the endgrades from a list of grades. ⇒ <code>Object</code>   
 **Returns**: <code>Object</code> - endgrades An object structured like this:  
 
