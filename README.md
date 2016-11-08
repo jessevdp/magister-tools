@@ -122,6 +122,10 @@ This function selects the endgrades from a list of grades. ⇒ <code>Object</cod
 
 ---
 
+# Suggestions
+This module is in a very early state and does not have a lot of functionality yet. Any suggested features are more than welcome.
+If you have an awesome feature in mind please [open an issue](https://github.com/skillzzjesse/magister-tools/issues/new). 
+
 # License & Disclaimer
 This module is open-sourced under the MIT Licence (see [LICENSE](LICENSE) for the full license). So within some limits, you can do with the code whatever you want.
 
