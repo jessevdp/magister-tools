@@ -11,7 +11,7 @@
 # intro
 The goal of this module is to make getting grades and other data from magister easier. Getting grades from <a href="http://www.schoolmaster.nl/">Magister</a> using <a href="https://github.com/simplyGits/MagisterJS">Magister.js</a> (v1) is a mess in my opinion. For my personal use I needed a way to get the average grades of students and this module does just that.
 
-I am open to any [suggestions](#suggestions).
+I am open to **any** [suggestions](#suggestions).
 
 ## Contents
 * [Installation](#installation)  
