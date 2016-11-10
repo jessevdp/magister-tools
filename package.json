@@ -1,6 +1,6 @@
 {
   "name": "magister-tools",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Makes getting grades and other data from magister easier.",
   "keywords": [
     "magister"
