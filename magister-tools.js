@@ -33,9 +33,15 @@ module.exports = {
     // If we need to do something before trying to log in we do it here.
     if (doFirst) doFirst();
 
+    // try to login to magister using settings as login-data.
+    try {
+      var magisterlogin = new Magister.Magister(settings);
+    } catch (err) {
+      callback(err) //Early return to callback with the error
+    }
 
-    // Login to magister using settings as login-data.
-    new Magister.Magister(settings).ready(function (err) {
+    // Invoke the .ready function.
+    magisterlogin.ready(function (err) {
       // Invoke callback when logged into magister. (if callback exists)
       if (callback) callback(err, this);
     });
@@ -94,27 +100,27 @@ module.exports = {
      var returnObj = {};
      grades.forEach(function (grade) {
 
-       /* Determine functions behavior based on the settings */
-       // Determine the key of the return Object:
-       if (settings.fullClassName) {
-         // The key will be the full name of the class.
-         var key = grade.class().description;
-       } else {
-         // The key will be the abbreviation of the class.
-         var key = grade.class().abbreviation;
-       }
-       // Determine the grade type.
-       if (settings.gradeToNumber) {
-         // The grade will be converted to a number.
-         var g = tools.toNumber(grade.grade())
-       } else {
-         // The grade will be default. (string)
-         var g = grade.grade();
-       }
-
-       /* Filling the return Object. */
-       // If grade's type is average grade.
+       // If grade's type is average grade:
        if (grade.type().isEnd()) {
+
+         /* Determine functions behavior based on the settings */
+         // Determine the key of the return Object:
+         if (settings.fullClassName) {
+           // The key will be the full name of the class.
+           var key = grade.class().description;
+         } else {
+           // The key will be the abbreviation of the class.
+           var key = grade.class().abbreviation;
+         }
+         // Determine the grade type.
+         if (settings.gradeToNumber) {
+           // The grade will be converted to a number.
+           var g = tools.toNumber(grade.grade())
+         } else {
+           // The grade will be default. (string)
+           var g = grade.grade();
+         }
+
          // Add value to the returnObj
          returnObj[key] = g;
        }
