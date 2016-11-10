@@ -16,7 +16,7 @@
   "author": "Jesse van der Pluijm",
   "license": "MIT",
   "dependencies": {
-    "magister.js": "^1.22.0"
+    "magister.js": "^1.22.1"
   },
   "bugs": {
     "url": "https://github.com/skillzzjesse/magister-tools/issues"
