@@ -18,8 +18,8 @@ I am open to **any** [suggestions](#suggestions).
 * [Example usage](#example-usage)  
 * [Documentation](#documentation)
  * [magisterLogin()](#magisterloginsettings-callback-dofirst)
- * [fetchcurrentcourse()](#fetchcurrentcoursemagisterlogin-callback)
- * [getendgrades()](#getendgradesgrades)
+ * [fetchCurrentCourse()](#fetchcurrentcoursemagisterlogin-callback)
+ * [getEndGrades()](#getendgradesgrades)
 * [Suggestions](#suggestions)  
 * [License & Disclaimer](#license--disclaimer)  
 
@@ -92,8 +92,8 @@ magister_tools.magisterLogin({
 # Documentation
 **Contents**
  * [magisterLogin()](#magisterloginsettings-callback-dofirst)
- * [fetchcurrentcourse()](#fetchcurrentcoursemagisterlogin-callback)
- * [getendgrades()](#getendgradesgrades)
+ * [fetchCurrentCourse()](#fetchcurrentcoursemagisterlogin-callback)
+ * [getEndGrades()](#getendgradesgrades)
 
 ---
 
