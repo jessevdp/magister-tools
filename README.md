@@ -16,7 +16,10 @@ I am open to **any** [suggestions](#suggestions).
 ## Contents
 * [Installation](#installation)  
 * [Example usage](#example-usage)  
-* [Documentation](#documentation)  
+* [Documentation](#documentation)
+ * [magisterLogin()](#magisterloginsettings-callback-dofirst)
+ * [fetchcurrentcourse()](#fetchcurrentcoursemagisterlogin-callback)
+ * [getendgrades()](#getendgradesgrades)
 * [Suggestions](#suggestions)  
 * [License & Disclaimer](#license--disclaimer)  
 
@@ -87,6 +90,13 @@ magister_tools.magisterLogin({
 ---
 
 # Documentation
+**Contents**
+ * [magisterLogin()](#magisterloginsettings-callback-dofirst)
+ * [fetchcurrentcourse()](#fetchcurrentcoursemagisterlogin-callback)
+ * [getendgrades()](#getendgradesgrades)
+
+---
+
 <a name="magisterLogin
 This function logs into magister using MagisterJS."></a>
 
