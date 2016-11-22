@@ -102,7 +102,7 @@ magister_tools.magisterLogin({
 <a name="magisterLogin
 This function logs into magister using MagisterJS."></a>
 
-### magisterLogin(settings, callback, doFirst)
+### magisterLogin(settings, callback[, doFirst])
 This function logs into magister using MagisterJS.  
 
 | Param | Type | Description |
@@ -139,7 +139,7 @@ This function selects the endgrades from a list of grades."></a>
 <a name="getEndGrades
 This function selects the endgrades from a list of grades."></a>
 
-### getEndGrades(grades)
+### getEndGrades(grades[, settings])
 This function selects the endgrades from a list of grades. ⇒ <code>Object</code>   
 **Returns**: <code>Object</code> - endgrades An object structured like this:  
 
