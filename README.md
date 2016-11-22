@@ -20,7 +20,7 @@ I am open to **any** [suggestions](#suggestions).
  * [magisterLogin()](#magisterloginsettings-callback-dofirst)
  * [fetchCurrentCourse()](#fetchcurrentcoursemagisterlogin-callback)
  * [fetchGrades()](#fetchgradescourse-callback)
- * [getEndGrades()](#getendgradesgrades)
+ * [getEndGrades()](#getendgradesgrades-settings)
 * [Suggestions](#suggestions)  
 * [License & Disclaimer](#license--disclaimer)  
 
@@ -95,7 +95,7 @@ magister_tools.magisterLogin({
  * [magisterLogin()](#magisterloginsettings-callback-dofirst)
  * [fetchCurrentCourse()](#fetchcurrentcoursemagisterlogin-callback)
  * [fetchGrades()](#fetchgradescourse-callback)
- * [getEndGrades()](#getendgradesgrades)
+ * [getEndGrades()](#getendgradesgrades-settings)
 
 ---
 
