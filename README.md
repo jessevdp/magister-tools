@@ -17,10 +17,6 @@ I am open to **any** [suggestions](#suggestions).
 * [Installation](#installation)  
 * [Example usage](#example-usage)  
 * [Documentation](#documentation)
- * [magisterLogin()](#magisterloginsettings-callback-dofirst)
- * [fetchCurrentCourse()](#fetchcurrentcoursemagisterlogin-callback)
- * [fetchGrades()](#fetchgradescourse-callback)
- * [selectEndGrades()](#selectendgradesgrades-settings)
 * [Suggestions](#suggestions)  
 * [License & Disclaimer](#license--disclaimer)  
 
@@ -123,7 +119,7 @@ magister_tools.fetchEndGrades(login, function (err, endGrades) {
  * [selectEndGrades()](#selectendgradesgrades-settings)  
 
 **Shortcut functions**
- * [fetchEndGrades()]()
+ * [fetchEndGrades()](#fetchendgradessettings-callback-dofirst)
 
 ---
 
