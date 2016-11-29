@@ -78,7 +78,7 @@ module.exports = {
   },
 
   /** ==========================================================================
-   * @name getEndGrades
+   * @name selectEndGrades
    * This function selects the endgrades from a list of grades.
    * @returns {Object} endgrades An object structured like this:
    * { class: endGrade }
@@ -89,7 +89,7 @@ module.exports = {
    * @param {Boolean} settings.fullClassName If the function should use the full class name or the class abbreviation. (DEAFAULT: false)
    * @param {Boolean} settings.gradeToNumber If the function should convert the grade to a JS number or leave it a string. (DEAFAULT: true)
    */
-   getEndGrades: function (grades, settings) {
+   selectEndGrades: function (grades, settings) {
 
      /* Set our settings or default them */
      if (!settings) settings = {};

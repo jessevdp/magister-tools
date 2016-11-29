@@ -20,7 +20,7 @@ I am open to **any** [suggestions](#suggestions).
  * [magisterLogin()](#magisterloginsettings-callback-dofirst)
  * [fetchCurrentCourse()](#fetchcurrentcoursemagisterlogin-callback)
  * [fetchGrades()](#fetchgradescourse-callback)
- * [getEndGrades()](#getendgradesgrades-settings)
+ * [selectEndGrades()](#selectendgradesgrades-settings)
 * [Suggestions](#suggestions)  
 * [License & Disclaimer](#license--disclaimer)  
 
@@ -73,7 +73,7 @@ magister_tools.magisterLogin({
          // What to do when we've got the grades for the current course of the logged in user.
 
          // Select the endgrades (avarage grades) from this list of grades.
-         var endgrades = magister_tools.getEndGrades(grades);
+         var endgrades = magister_tools.selectEndGrades(grades);
 
          /*=======================================================
            ******************************************************
@@ -95,7 +95,7 @@ magister_tools.magisterLogin({
  * [magisterLogin()](#magisterloginsettings-callback-dofirst)
  * [fetchCurrentCourse()](#fetchcurrentcoursemagisterlogin-callback)
  * [fetchGrades()](#fetchgradescourse-callback)
- * [getEndGrades()](#getendgradesgrades-settings)
+ * [selectEndGrades()](#selectendgradesgrades-settings)
 
 ---
 
@@ -133,13 +133,13 @@ This function fetches the grades for the course of the logged in user.
 | course | <code>Array</code> | course: A Course (like: 4 VWO E/M 14-15) (You can get the courses from MagisterJS) |
 | callback | <code>function</code> | A callback function taking two parameters. -> err, grades |
 
-<a name="getEndGrades
+<a name="selectEndGrades
 This function selects the endgrades from a list of grades."></a>
 
-<a name="getEndGrades
+<a name="selectEndGrades
 This function selects the endgrades from a list of grades."></a>
 
-### getEndGrades(grades[, settings])
+### selectEndGrades(grades[, settings])
 This function selects the endgrades from a list of grades. ⇒ <code>Object</code>   
 **Returns**: <code>Object</code> - endgrades An object structured like this:  
 
