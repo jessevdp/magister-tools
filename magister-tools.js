@@ -1,5 +1,5 @@
 /**
- * Magister Tools v1.0.4
+ * Magister Tools v1.1.0
  * https://git.io/vX4KY
  *
  * Copyright 2016 Jesse van der Pluijm
@@ -26,7 +26,7 @@ module.exports = {
    * This function logs into magister using magisterJS.
    * @param {Object} settings An object containing the data needed to login to magister.
    * @param {Function} callback A callback function taking two parameters. -> err, magisterlogin
-   * @param {Function} dofirst (OPTIONAL) A function the program needs to excecute before trying to login to Magister.
+   * @param {Function} doFirst (OPTIONAL) A function the program needs to execute before trying to login to Magister.
    * For instance: logging something to the console indicating we're trying to log in.
    */
   magisterLogin: function (settings, callback, doFirst) {
@@ -127,5 +127,64 @@ module.exports = {
      })
      /* Returning */
      return returnObj;
-   }
+   },
+   /* ======================================================================== *
+    *  All the functions below are shortcut functions, make things easier.
+    *  see: (https://github.com/skillzzjesse/magister-tools/issues/6)
+    * ======================================================================== */
+
+   /** ==========================================================================
+     * @name fetchEndGrades
+     * This function fetches the endgrades from magister for a specified user.
+     *
+     * Note that this is a shortcut function designed to make using this
+     * module just a little easier.
+     * However, it has less customizability since the function will use deafault
+     * settings in the selectEndGrades function.
+     * Also tracking where an error occured while getting the data from Magister
+     * isn't possible.
+     * @returns {Object} endgrades An object structured like this: (Note that it will return via the callback)
+     * { class-abbreviation: endGrade }
+     * // For example
+     * {EN: 7.9, WB: 6.5}
+     * @param {Object} settings An object containing the data needed to login to magister.
+     * @param {Function} callback A callback function taking two parameters -> err, endgrades.
+     * @param {Function} dofirst (OPTIONAL) A function the program needs to excecute before trying to login to Magister.
+     * For instance: logging something to the console indicating we're trying to log in.
+     */
+     fetchEndGrades: function (settings, callback, doFirst) {
+
+       /* Login to magister using settings as login Object.
+        * doFirst is also passed to this function. */
+       module.exports.magisterLogin(settings, function (err, magisterlogin) {
+         /* Handle any errors by returning to the callback. */
+         if (err) {
+           return callback(err);
+         }
+
+         /* Fetch the current course for the logged in user. */
+         module.exports.fetchCurrentCourse(magisterlogin, function (err, course) {
+           /* Handle any errors by returning to the callback. */
+           if (err) {
+             return callback(err);
+           }
+
+           /* Fetch the grades of the course of the logged in user. */
+           module.exports.fetchGrades(course, function (err, grades) {
+             /* Handle any errors by returning to the callback. */
+             if (err) {
+               return callback(err);
+             }
+             /* Select the end/average grades from our grades and save the returned object. */
+             var endGrades = module.exports.selectEndGrades(grades);
+
+             /* Return to callback with the end/average grades. */
+             callback(null, endGrades);
+
+           })
+
+         })
+       }, doFirst);
+     }
+
 }
