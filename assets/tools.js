@@ -1,5 +1,5 @@
 /**
- * Magister Tools v1.0.0
+ * Magister Tools v1.0.4
  * https://git.io/vX4KY
  *
  * Copyright 2016 Jesse van der Pluijm
